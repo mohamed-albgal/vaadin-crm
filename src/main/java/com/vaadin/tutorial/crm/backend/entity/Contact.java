@@ -20,10 +20,10 @@ public class Contact extends AbstractEntity implements Cloneable {
     private String lastName = "";
 
     @ManyToOne
-    @JoinColumn(name= "company_id")
+    @JoinColumn(name = "company_id")
     private Company company;
 
-    @Enumerated(EnumType.String)
+    @Enumerated(EnumType.STRING)
     @NotNull
     private Contact.Status status;
 
